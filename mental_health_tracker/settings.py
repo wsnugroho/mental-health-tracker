@@ -30,7 +30,7 @@ DEBUG = not PRODUCTION
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "wisnu-nugroho31-mentalhealthtracker2.pbp.cs.ui.ac.id",
+    "wisnu-nugroho31-mentalhealthtracker.pbp.cs.ui.ac.id",
 ]
 
 
@@ -133,6 +133,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost",
     "http://127.0.0.1",
-    "http://wisnu-nugroho31-mentalhealthtracker2.pbp.cs.ui.ac.id",
-    "https://wisnu-nugroho31-mentalhealthtracker2.pbp.cs.ui.ac.id",
+    "http://wisnu-nugroho31-mentalhealthtracker.pbp.cs.ui.ac.id",
+    "https://wisnu-nugroho31-mentalhealthtracker.pbp.cs.ui.ac.id",
 ]
