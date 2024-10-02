@@ -1,9 +1,10 @@
 from django.contrib.auth import login
 from django.urls import path
 
-from main.views import (create_mood_entry, delete_mood, edit_mood, login_user,
-                        logout_user, register, show_json, show_json_by_id,
-                        show_main, show_xml, show_xml_by_id)
+from main.views import (add_mood_entry_ajax, create_mood_entry, delete_mood,
+                        edit_mood, login_user, logout_user, register,
+                        show_json, show_json_by_id, show_main, show_xml,
+                        show_xml_by_id)
 
 app_name = "main"
 
@@ -19,4 +20,5 @@ urlpatterns = [
     path("xml/<str:id>/", show_xml_by_id, name="show_xml_by_id"),
     path("json/", show_json, name="show_json"),
     path("json/<str:id>/", show_json_by_id, name="show_json_by_id"),
+    path('create-mood-entry-ajax', add_mood_entry_ajax, name='add_mood_entry_ajax'),
 ]
